@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-const ProductthruApi = ({productData}:any) => {
-  return (
-    <div></div>
-  )
-}
+// const ProductthruApi = ({productData}:any) => {
+//   return (
+//     <div></div>
+//   )
+// }
 
-export default ProductthruApi
+// export default ProductthruApi

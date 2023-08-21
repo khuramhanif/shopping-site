@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Hero from './componants/view/Hero/Hero'
 import ProductsType from '@/app/componants/view/ProductsTypes/ProductsType'
-import Base_Api from '@/app/componants/shared/baseApi'
-import ProductthruApi from './componants/view/ProductThruApi'
+
+// import ProductthruApi from './componants/view/ProductThruApi'
 
 async function fetchalldata() {
 //  let res = await fetch(`${Base_Api}/Api/product`)
@@ -13,13 +13,13 @@ async function fetchalldata() {
   return {response : "hi"}
 }
 export default async function Home() {
-  let {response} = await fetchalldata()
+  // let {response} = await fetchalldata()
  
   return (
     <>
       <Hero/>
       <ProductsType/>
-      <ProductthruApi productData ={response}/>
+      {/* <ProductthruApi productData ={response}/> */}
     </>
     )
 }
