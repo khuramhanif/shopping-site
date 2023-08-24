@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ProductthruApi = ({productData}:any) => {
+const ProductthruApi = ({ProductData}:any) => {
   return (
-    <div></div>
+    <div>{ProductData[0].title}</div>
   )
 }
 

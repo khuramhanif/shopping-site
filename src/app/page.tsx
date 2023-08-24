@@ -5,12 +5,11 @@ import Base_Api from '@/app/componants/shared/baseApi'
 import ProductthruApi from './componants/view/ProductThruApi'
 
 async function fetchalldata() {
-//  let res = await fetch(`${Base_Api}/Api/product`)
-//  if(!res.ok){
-//   throw new Error("Failed to fetch data")
-//  }
-//  return res.json()
-  return {response :"Hi"}
+ let res = await fetch(`${Base_Api}/Api/product`)
+ if(!res.ok){
+  throw new Error("Failed to fetch data")
+ }
+ return res.json()
 }
 export default async function Home() {
   let {response} = await fetchalldata()
@@ -19,7 +18,7 @@ export default async function Home() {
     <>
       <Hero/>
       <ProductsType/>
-      <ProductthruApi productData ={response}/>
+      <ProductthruApi ProductData ={response}/>
     </>
     )
 }
