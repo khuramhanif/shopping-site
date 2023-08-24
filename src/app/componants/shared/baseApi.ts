@@ -1,2 +1,3 @@
-let Base_Api = "http://localhost:3000/"
+let Base_Api = process.env.NODE_ENV==="development"?
+"http://localhost:3000/":"shopping-site-henna.vercel.app"
 export default Base_Api
